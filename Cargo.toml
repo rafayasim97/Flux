@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/flux-core",
+  "crates/flux-cli",
+  "examples",
+]
+
+[workspace.package]
+edition = "2021"
+license = "MIT"
+version = "0.1.0"

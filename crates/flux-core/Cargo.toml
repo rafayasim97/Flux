@@ -1,0 +1,17 @@
+[package]
+name = "flux-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+thiserror = "1"
+bytemuck = { version = "1", features = ["derive"] }
+half = "2"
+parking_lot = "0.12"
+rayon = "1.10"
+rand = "0.8"
+rand_distr = "0.4"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+metal = "0.29"
+objc = "0.2"
